@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- W.A. Mbanda (2027273792) -->
+<!-- CSIS1664 (2025) - Project-->
+<!-- File name: Prayer_request.html -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prayer request</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+    /* 
+       General Body
+    */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        overflow-y: auto;
+    }
+
+    /* Content */
+    section#content {
+        max-width: 45rem;
+        margin: 1.5rem auto 1.5rem 12.5rem;
+        padding: 0.9rem 17rem;
+        background-color: #ffffffcc; /* semi-transparent white for clarity */
+        border-radius: 0.5rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section#content h1.Title {
+        font-size: 2rem;
+        color: #0047ab; /* heading blue */
+        margin-bottom: 1rem;
+        text-align: center; /* center heading */
+    }
+
+    section#content p {
+        font-size: 1.1rem;
+        line-height: 1.6em;
+        margin-bottom: 1rem;
+        color: #003366; /* darker text for readability */
+    }
+
+    /* Form Styling */
+    section#content form {
+        margin-top: 1rem;
+    }
+
+    section#content label {
+        font-weight: bold;
+        color: #003366;
+    }
+
+    section#content input {
+        width: 100%;
+        padding: 0.5rem;
+        margin-top: 0.25rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+    }
+
+    section#content button {
+        background-color: #0047ab;
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+       
+    }
+
+    section#content button:hover {
+        background-color: #002244;
+    }
+
+    /* Footer */
+    footer {
+        margin-top: 1rem;
+        padding: 0.5rem 0.2rem;
+        background-color: #0047ab; /* main blue */
+        color: white;
+        text-align: center;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+
+    footer a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        padding:0;
+        background: none;
+        border-radius: 0;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+        background-color: #002244;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Fishers in Favour Logo" class="logo">
+        <h1> Fishers In Favour </h1>
+        <p class="slogan"> where living water is found </p> 
+        <hr class="header-divider">
+    </header>
+
+    <nav id="menu_1">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About_us.html">About us</a></li>
+            <li><a href ="Contact_us.html">Contact us</a></li>
+            <li><a href="Prayer_request.html" class="current"> > Prayer request</a></li>
+            <li><a href="Becoming_a_prayer_partner.html">Become a prayer partner</a></li>
+            <li><a href="Our_pastors.html">Our pastors</a></li>
+            <li><a href="Prayers_for_you.html"> Prayers for you</a></li>
+            <li><a href="Resources_page.html">Resource page</a></li>
+        </ul>
+    </nav>
+
+    <section id="content">
+        <h1 class="Title">Request for Prayer</h1>
+
+        <p>We believe that prayer has the power to heal, restore, and strengthen.  
+        If you would like our pastors to pray for you, please fill in the form below.    
+        Just take a step of faith, and we will stand with you in prayer.</p>
+
+        <form method="get" action="confirm.html">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <p>By submitting this form, you are asking our team of pastors to keep you in prayer.  
+            You are never alone — the Lord is close to those who call on Him.</p>
+
+            <button type="submit">Submit Prayer Request</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Would you like to become one of our prayer partners? 
+           <a href="Becoming_a_prayer_partner.html">Click here to apply.</a>
+        </p>
+        <a href="index.html">Back to Home</a>
+    </footer>
+</body>
+</html>

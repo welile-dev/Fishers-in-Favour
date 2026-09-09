@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- W.A. Mbanda (2027273792) -->
+<!-- CSIS1664 (2025) - Project-->
+<!-- File name: confirm.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmation Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        /* General Body */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: #e6f0ff; /* light blue background */
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            padding: 2rem 8rem 1rem 1rem;
+        }
+
+        .logo {
+            width: 5rem;
+            height: auto;
+            display: block;
+            margin: 0 auto 0.5rem auto;
+        }
+
+        header h1 {
+            margin: 0.5rem 0;
+            font-size: 2rem;
+            color: #0047ab; /* darker blue */
+        }
+
+        .slogan {
+            font-size: 1rem;
+            color: #003366; /* navy-ish blue */
+            margin-bottom: 0.5rem;
+        }
+
+        .header-divider {
+            width: 60%;
+            border: 0.1rem solid #0047ab; /* blue divider */
+            margin: 0.5rem auto 0 auto;
+        }
+
+        /* Confirmation message */
+        .confirmation-message {
+            background-color: #cce0ff; /* light blue box */
+            padding: 2rem 1.5rem;
+            max-width: 35rem;
+            margin: 6rem auto; 
+            border-radius: 0.5rem;
+        }
+
+        .confirmation-message h1 {
+            font-size: 2rem;
+            color: #0047ab; /* darker blue for heading */
+            margin-bottom: 1rem;
+        }
+
+        .confirmation-message p {
+            font-size: 1.1rem;
+            color: #003366;
+            margin-bottom: 1rem;
+        }
+
+        /* Home link */
+        .home-link {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background-color: #0047ab; /* main blue */
+            color: white;
+            text-decoration: none;
+            border-radius: 0.25rem;
+            font-weight: bold;
+        }
+
+        .home-link:hover {
+            background-color: #003366; /* darker blue on hover */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="images/logo.png" alt="Fishers In Favour Logo" class="logo">
+        <h1>Fishers In Favour</h1>
+        <p class="slogan">where living water is found</p>
+        <hr class="header-divider">
+    </header>
+
+    <!-- Confirmation Message -->
+    <div class="confirmation-message">
+        <h1>Thank You!</h1>
+        <p>Your information has been successfully received.</p>
+       
+        <a href="index.html" class="home-link">Return to Home</a>
+    </div>
+
+</body>
+
+</html>
